@@ -23,6 +23,7 @@ header {
 }
 .about p{
   margin: 10px 100px;
+  text-align: justify;
 }
 .flex-container {
   display: flex;
