@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+body {
+  font-family:Plus Jakarta Sans;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('https://tse1.mm.bing.net/th?id=OIP.ag_l8JOZ7_9s1by9uWkTuQHaFq&pid=Api&P=0&h=180');
+  background-size: cover;
+  background-position: center;
+}
+header {
+  background: linear-gradient(rgb(16, 16, 139),rgb(4, 4, 58));
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #ff6347;
+}
+
+img{
+  width: 150px;
+  height: 300px;
+  border-radius: 1%;
+  object-fit: cover;
+  float: right;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+.about {
+  text-align: left;
+  margin: 40px 0;
+}
+.about h2 {
+  margin: 10px 100px;
+  font-size: 35px;
+}
+.about p{
+  margin: 10px 100px;
+  text-align: justify;
+  font-size: 20px;
+  margin-right: 30%;
+}
+footer {
+  background: linear-gradient(rgb(16, 16, 139),rgb(4, 4, 58));
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  nav ul {
+      flex-direction: row;
+      padding: 10px;
+  }
+  
+  nav ul li a {
+      font-size: 16px;
+  }
+  img {
+    width: 180px; 
+    height: auto; 
+    float: none; 
+    margin: 20px auto; 
+    display: block; 
+}
+.about {
+    margin: 30px 0;
+}
+
+.about h2 {
+    margin: 10px 50px; 
+    font-size: 30px;
+}
+
+.about p {
+    margin: 10px 50px; 
+    text-align: justify;
+    font-size: 18px; 
+    margin-right: 10%; 
+
+}
+}
+  
+  @media screen and (max-width: 600px) {
+    header {
+      padding: 15px;
+      font-size: 24px;
+  }
+    img {
+        width: 100px;
+        height: auto;
+        float: none;
+        margin: 10px auto;
+        display: block;
+    }
+    .about h2 {
+        margin: 10px 20px;
+        font-size: 24px;
+    }
+
+    .about p {
+        margin: 10px 20px;
+        font-size: 16px;
+        margin-right: 5%;
+    }
+  footer {
+      font-size: 14px;
+      padding: 5px 0;
+  }
+}
