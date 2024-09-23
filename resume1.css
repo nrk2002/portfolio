@@ -36,6 +36,7 @@ nav ul li a:hover {
 }
 div{
   padding: 10px 20px;
+  animation: fadeIn 3s ease-in-out;
 }
 div h1{
   font-size: 30px;
@@ -43,10 +44,11 @@ div h1{
 div p{
   font-size: 20px;
 }
-footer {
-    background: linear-gradient(rgb(16, 16, 139),rgb(4, 4, 58));
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 40px;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }

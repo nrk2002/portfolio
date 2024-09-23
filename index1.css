@@ -34,10 +34,17 @@ nav ul li a {
 nav ul li a:hover {
   color: #ff6347;
 }
-footer {
-    background: linear-gradient(rgb(16, 16, 139),rgb(4, 4, 58));
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 40px;
+div{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  animation: fadeIn 3s ease-in-out;
+  padding: 10px 20px;
+}
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
