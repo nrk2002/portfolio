@@ -4,9 +4,10 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: url('https://tse1.mm.bing.net/th?id=OIP.ag_l8JOZ7_9s1by9uWkTuQHaFq&pid=Api&P=0&h=180');
+  background-image: url('https://tse1.mm.bing.net/th?id=OIP.cvkhxNY0OTTYF8weDI7vkwHaFj&pid=Api&P=0&h=180');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 header {
   background: linear-gradient(rgb(16, 16, 139),rgb(4, 4, 58));
@@ -35,10 +36,16 @@ nav ul li a:hover {
   color: #ff6347;
 }
 div{
-  margin-top: 10%;
   margin-bottom: 10%;
   animation: fadeIn 3s ease-in-out;
   padding: 10px 20px;
+  text-align: center;
+  justify-content: center;
+}
+div img{
+  width: 200px;
+  height: 200px;
+  border-radius: 30%;
 }
   @keyframes fadeIn {
     from {

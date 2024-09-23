@@ -4,8 +4,9 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: url('https://tse1.mm.bing.net/th?id=OIP.ag_l8JOZ7_9s1by9uWkTuQHaFq&pid=Api&P=0&h=180');
+  background-image: url('https://tse1.mm.bing.net/th?id=OIP.cvkhxNY0OTTYF8weDI7vkwHaFj&pid=Api&P=0&h=180');
   background-size: cover;
+  background-attachment: fixed;
   background-position: center;
 }
 header {
