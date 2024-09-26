@@ -47,6 +47,9 @@ div img{
   height: 200px;
   border-radius: 30%;
 }
+.icon{
+  font-size: 30px;
+}
   @keyframes fadeIn {
     from {
       opacity: 0;

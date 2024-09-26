@@ -14,17 +14,17 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutme.html">About</a></li>
-                <li><a href="resume1.html">Resume</a></li>
+                <li><a href="resume1.html">Skills</a></li>
                 <li><a href="form.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <form>
-        <i class="fas fa-user" ></i><input type="text" name="name" placeholder="Your Name" required> 
-        <i class="fas fa-mobile-alt"></i><input type="text" name="Phone" placeholder="Your number" required>
-        <i class="fas fa-envelope"></i><input type="text" name="email" placeholder="Your Email" required> 
-        <i class="fa-solid fa-comment"></i><textarea name="message" rows="5" placeholder="Your Message or Suggestion..." required></textarea>
+    <form onsubmit="return validate()">
+        <i class="fas fa-user" ></i><input type="text" id="name" placeholder="Your Name"> 
+        <i class="fas fa-mobile-alt"></i><input type="text" id="phone" placeholder="Your number">
+        <i class="fas fa-envelope"></i><input type="text" id="email" placeholder="Your Email"> 
+        <i class="fa-solid fa-comment"></i><textarea id="message" rows="5" placeholder="Your Message or Suggestion..."></textarea>
         <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
     </form>
     <footer>
@@ -32,5 +32,32 @@
         <p><i class="fa-solid fa-envelope"></i> nrk01102002@gmail.com</p>
         <p><i class="fa-solid fa-house"></i> Thirumangalam, Madurai</p>
     </footer>
+    <script>
+        function validate() {
+            let Name = document.getElementById("name").value;
+            let Phone = document.getElementById("phone").value;
+            let Email = document.getElementById("email").value;
+            let Query = document.getElementById("message").value;
+
+            if (Name == "") {
+                alert("Name is required");
+                return false;
+            }
+            if (phone.length != 10 || isNaN(phone)) {
+                alert("Please enter a valid 10-digit mobile number");
+                return false;
+            }
+            let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+            if (Query == "") {
+                alert("Message is required");
+                return false;
+            }
+            return true;
+        }
+    </script>
 </body>
 </html>
