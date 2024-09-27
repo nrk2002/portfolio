@@ -12,7 +12,7 @@ body {
 header {
   background: linear-gradient(rgb(16, 16, 139),rgb(4, 4, 58));
   color: white;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 nav ul {
@@ -23,33 +23,69 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 nav ul li a:hover {
   color: #ff6347;
 }
-div{
-  padding: 10px 20px;
+.skills-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   animation: fadeIn 3s ease-in-out;
 }
-div h1{
-  font-size: 30px;
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2em;
 }
-div p{
-  font-size: 20px;
+
+.skills-list li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
 }
+
+.skills-list li:last-child {
+  border-bottom: none;
+}
+
+.skills-list li::before {
+  content: "\f00c"; /* FontAwesome checkmark */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 15px;
+  font-size: 1.2em;
+}
+.skills-list li:hover {
+  background-color: #f0f8ff;
+  cursor: pointer;
+}
+
   @keyframes fadeIn {
     from {
       opacity: 0;
     }
     to {
       opacity: 1;
+    }
+  }
+  @media screen and (max-width: 800px){
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      font-size: 18px;
     }
   }

@@ -12,7 +12,7 @@ body {
 header {
   background: linear-gradient(rgb(16, 16, 139),rgb(4, 4, 58));
   color: white;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 nav ul {
@@ -23,13 +23,13 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 nav ul li a:hover {
@@ -39,7 +39,7 @@ nav ul li a:hover {
 img{
   width: 150px;
   height: 300px;
-  border-radius: 50%;
+  border-radius: 20%;
   object-fit: cover;
   float: right;
   margin-right: 10%;
@@ -86,10 +86,9 @@ button:hover {
 @media screen and (max-width: 800px) {
   img{
    float: none;
-   border-radius: 50%;
+   border-radius: 20%;
     object-fit: cover;
-    margin-top: 10px;
-    margin-left: 150px;
+    margin-left: 30%;
   }
   button{
     width: 30%;
@@ -101,4 +100,10 @@ button:hover {
   .about h2{
     margin: auto 10%;
   }
-}
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      font-size: 18px;
+    }
+  }

@@ -35,30 +35,43 @@
     </footer>
     <script>
         function validate() {
-            let Name = document.getElementById("name").value;
-            let Phone = document.getElementById("phone").value;
-            let Email = document.getElementById("email").value;
-            let Query = document.getElementById("message").value;
-
-            if (Name == "") {
-                alert("Name is required");
+            let name = document.getElementById("name").value.trim();
+            let phone = document.getElementById("phone").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let message = document.getElementById("message").value.trim();
+    
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let phonePattern = /^[0-9]{10}$/;
+    
+            // Validate name
+            if (name === "") {
+                alert("Please enter your name.");
                 return false;
             }
-            if (phone.length != 10 || isNaN(phone)) {
-                alert("Please enter a valid 10-digit mobile number");
+    
+            // Validate phone number
+            if (!phonePattern.test(phone)) {
+                alert("Please enter a valid 10-digit phone number.");
                 return false;
             }
-            let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    
+            // Validate email
             if (!emailPattern.test(email)) {
-                alert("Please enter a valid email address");
+                alert("Please enter a valid email address.");
                 return false;
             }
-            if (Query == "") {
-                alert("Message is required");
+    
+            // Validate message
+            if (message === "") {
+                alert("Please enter your message.");
                 return false;
             }
+    
+            // If all fields are valid, display a success message
+            alert("Form submitted successfully!");
             return true;
         }
     </script>
+    
 </body>
 </html>
