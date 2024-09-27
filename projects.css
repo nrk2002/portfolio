@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+body {
+  font-family:Plus Jakarta Sans;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('https://tse1.mm.bing.net/th?id=OIP.cvkhxNY0OTTYF8weDI7vkwHaFj&pid=Api&P=0&h=180');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+header {
+  background: linear-gradient(rgb(16, 16, 139),rgb(4, 4, 58));
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #ff6347;
+}
+div{
+    padding: 10px 20px;
+    animation: fadeIn 3s ease-in-out;
+}
+div h1{
+    text-align: center;
+    margin-bottom: 5%;
+}
+div a{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0px 20px;
+    background-color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
